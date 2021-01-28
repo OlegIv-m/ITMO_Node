@@ -63,3 +63,5 @@ let return_object = function(decorate, ...args){
 let decorated = return_object(func,'one','two');
 
 console.log(decorated());
+
+
