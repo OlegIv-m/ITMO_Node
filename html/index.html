@@ -3,10 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<title>JS Node Lesson 1</title>
+		<style type="text/css">
+			.anime {
+				background-color: lightgreen;
+				transform: translate(50px,0px);
+				transition: transform 2s steps(4) 1s;
+			}
+		</style>
 	</head>
+
+	
 	<body>
 		<p>Lab</p>
-		<h1>NodeJS is cool!!!</h1>
+		<h1 class='' onmouseover='document.getElementById("test").className="anime"' id='test'
+			onmouseleave='document.getElementById("test").className=""'>
+			NodeJS is cool!!!
+		</h1>
 		
 		<script src="../scripts/script1.js" ></script>
 	</body>	
