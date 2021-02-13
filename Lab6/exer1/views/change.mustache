@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="py-2 text-center">
+		<h1>{{title}}</h1> <!-- вставка из свойства title-->
+	</div>
+	<div class="container">
+		<div class="text-center mb-4">
+			<!-- вставка из свойства route_url и data.id -->
+			<form class="card" method="POST" action="{{route_url}}/change/{{data.id}}" enctype="application/x-www-form-urlencoded">
+				<!-- вставка из свойства data.name -->
+				<p class="card-text">Name: <input type="text" name="name" id="name" size="25" required value="{{data.name}}" />  </p>
+				<!-- вставка из свойства data.price -->
+				<p class="card-text">Price: <input type="text" pattern="\d+(,\d{2})?" name="price" id="price" size="25" required value="{{data.price}}" /> </p>
+				<!-- вставка из свойства data.desc -->
+				<p class="card-text">Description: <textarea name="desc" cols="40" rows="5" placeholder="">  {{data.desc}} </textarea></p>
+				<p>
+					<input class="btn btn-primary" type="submit" name="submit" id="submit" value="Change"/>
+					<a href="{{route_url}}/" class="btn btn-secondary">Reset</a>
+				</p>
+			</form>
+		</div>
+	</div>
